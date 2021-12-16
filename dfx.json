@@ -6,11 +6,8 @@
     },
     "heartbeat": {
       "candid": "src/heartbeat/heartbeat.did",
-      "package": "heartbeat",
-      "type": "rust",
-      "dependencies": [
-        "ControlCanister"
-      ]
+      "wasm": "./target/wasm32-unknown-unknown/release/opt.wasm",
+      "type": "custom"
     }
   },
   "dfx": "0.8.4",
