@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "ControlCanister":{
+      "main": "src/ControlCanister/canister.mo",
+      "type": "motoko"
+    },
+    "heartbeat": {
+      "candid": "src/heartbeat/heartbeat.did",
+      "package": "heartbeat",
+      "type": "rust",
+      "dependencies": [
+        "ControlCanister"
+      ]
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
